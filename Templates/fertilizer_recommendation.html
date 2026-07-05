@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Fertilizer Recommendation System</h1>
-    <form method="POST" action="{{ url_for('fertilizer_recommendation') }}">
+    <form method="POST" action="{{ url_for('predict_fertilizer') }}">
         <label for="N">Enter the value of Nitrogen (N):</label>
         <input type="number" id="N" name="N" step="any" required>
         <br><br>
@@ -36,8 +36,8 @@
         <label for="crop">Enter the name of the crop:</label>
         <input type="text" id="crop" name="crop" required>
         <br><br>
-        <label for="Soil">Enter the value of Soil:</label>
-        <input type="number" id="Soil" name="Soil" step="any" required>
+        <label for="soil">Enter the value of Soil:</label>
+        <input type="number" id="soil" name="soil" step="any" required>
         <br><br>
         <input type="submit" value="Get Fertilizer Recommendation">
     </form>
